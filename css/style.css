@@ -1,44 +1,59 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;   /*não lembro o que significa*/
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 #filme {
-    width: 100%;                 /* 100% da largura da página*/
-    display: flex;               /* Alinhamento das divs*/
-    justify-content: center;     /* Centralização das divs child*/
-    
-    /*Envolve todo o conteúdo no campo de visão do usuário, retirando a barra de rolagem horizontal, e quebrando o conteúdo*/
-    flex-wrap: wrap; 
-    padding-top: 120px;
-               
+  width: 100%;              /* 100% da largura da página */
+  display: flex;            /* Alinhamento das divs */
+  justify-content: center;  /* Centralização das divs child */
+
+  /*Envolve todo o conteúdo no campo de visão do usuário, retirando a barra de rolagem da horizontal, e quebrando o conteúdo*/
+  flex-wrap: wrap;          
 }
 
-#filme div{
-    width: 25%;             /* largura de cara div child */
-    margin: 20px;           /* espaçamento extremo */
-       
-    box-shadow: 0px 1.5px 5px rgba(204, 10, 10, 0.534);     /*sombra da caixa: coordenada X, coordenada Y, esfumação, cor */
-    border-bottom-left-radius: 5px; /* arredondamento da borda inferior à esquerda */
-    border-bottom-right-radius: 5px; /* arredondamento da borda inferior à direita */
-    padding: 10px;
-    margin-bottom: 150px;
+#filme div {
+  width: 25%;      
+  margin: 20px;     
+  box-shadow: 0px 1.5px 5px rgba(196, 0, 59, 0.568); 
+  border-bottom-left-radius: 5px;   
+  border-bottom-right-radius: 5px; 
+  padding: 10px;   
+  margin-bottom: 150px;  
+  margin-top: 50px;
 
 }
 
 #filme div img {
-    width: 100%;  /* largura da imagem em sua div */
-    border-bottom-left-radius: 10px;       /* arredondamento da borda inferior esquerda */
-    border-bottom-right-radius: 10px;      /* arredondamento da borda inferior direita */
-    box-shadow: 0px 2px 0.8px rgba(54, 2, 2, 0.568);
-    margin-top: -60px;
+  width: 100%;  
+  border-bottom-left-radius: 5px;     
+  border-bottom-right-radius: 5px;    
+  box-shadow: 0px 2px 0.8x rgba(196, 0, 59, 0.123);    
+  margin-top: -60px; 
 }
 
-#filme div:hover{
-transition: ease 2s;
-transform: scale(1.1);
-cursor: pointer;
-box-shadow: 0px 0px 0px 100vw rgba(204, 10, 10, 0.534);
-border-radius: 5px;
+#filme div:hover {
+  transition: ease 2s;   
+  transform: scale(1.1);
+  cursor: pointer;      
+  box-shadow: 0px 0px 0px 100vw rgba(196, 0, 59, 0.568);   
+  border-radius: 5px;   
+}
+
+
+.btn {
+  background: pink;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(215, 120, 215);
+  color: white;
+  border: 2px solid purple;
 }
